@@ -199,6 +199,101 @@ doencas_traduzidas = {
     "hepatitis A": "Hepatite A"
 }
 
+tratamentos = {
+    "Vertigem Posicional Paroxística": "Manobras de reposicionamento e exercícios de reabilitação vestibular. Medicamentos podem ser usados temporariamente para aliviar os sintomas.",
+    "AIDS": "Tratamento antirretroviral para controlar o vírus e prevenir progressão da doença. Monitoramento contínuo da carga viral e função imunológica.",
+    "Acne": "Uso de cremes tópicos com retinoides ou antibióticos. Limpeza de pele e, em casos mais severos, terapias com luz ou medicamentos orais como isotretinoína.",
+    "Hepatite Alcoólica": "Cessação do consumo de álcool, tratamento nutricional e, em casos graves, terapia com corticosteroides ou pentoxifilina.",
+    "Alergia": "Identificação e evitação de alérgenos. Uso de antialérgicos e, em casos severos, imunoterapia.",
+    "Artrite": "Exercícios físicos, medicamentos anti-inflamatórios e modificadores da doença. Terapias físicas como fisioterapia também são recomendadas.",
+    "Asma Brônquica": "Uso de inaladores de longa duração e controladores, além de corticosteroides para controle das crises.",
+    "Espondilose Cervical": "Exercícios de fisioterapia, medicamentos para dor e, em casos específicos, procedimentos cirúrgicos.",
+    "Catapora": "Isolamento para evitar a disseminação, loções calmantes para a pele e antitérmicos para controle da febre.",
+    "Colestase Crônica": "Medicamentos para controlar a coceira e proteção hepática. Em alguns casos, procedimentos para desobstruir os canais biliares.",
+    "Resfriado Comum": "Repouso, hidratação e uso de analgésicos e antitérmicos. Remédios para alívio dos sintomas como congestão nasal podem ser utilizados.",
+    "Dengue": "Hidratação intensiva, uso de antitérmicos (evitar aspirina devido ao risco de sangramento) e monitoramento clínico para sinais de alerta de dengue hemorrágica.",
+    "Diabetes": "Monitoramento e controle da glicose, dieta balanceada e exercícios físicos. Uso de medicamentos orais ou insulina conforme necessário.",
+    "Hemorroidas Dimórficas": "Banho de assento, uso de pomadas anti-hemorroidárias e, em casos graves, intervenção cirúrgica.",
+    "Reação a Medicamentos": "Cessar o uso do medicamento causador e tratamento dos sintomas. Uso de antialérgicos e corticosteroides se necessário.",
+    "Infecção Fúngica": "Antifúngicos tópicos ou orais dependendo da severidade e localização da infecção.",
+    "DRGE": "Mudanças dietéticas, evitar alimentos que desencadeiam os sintomas e uso de antiácidos e inibidores da bomba de prótons.",
+    "Gastroenterite": "Reposição de fluidos e eletrólitos para prevenir desidratação. Dieta leve e, em alguns casos, medicamentos para náusea.",
+    "Infarto": "Atendimento de emergência com reperfusão miocárdica e uso de medicamentos para dissolver coágulos. Terapia de reabilitação cardíaca pós-infarto.",
+    "Hepatite B": "Monitoramento da função hepática e, em casos crônicos, antivirais para reduzir a progressão da doença hepática.",
+    "Hepatite C": "Terapia antiviral para eliminar o vírus, com monitoramento contínuo da função hepática e detecção de fibrose ou cirrose.",
+    "Hepatite D": "Tratamento com antivirais em conjunto com terapia para Hepatite B, visto que a infecção depende da presença do vírus da Hepatite B.",
+    "Hepatite E": "Geralmente auto-limitada, requer apenas tratamento de suporte. Em casos crônicos, antivirais podem ser necessários.",
+    "Hipertensão": "Mudanças de estilo de vida como dieta saudável e exercícios, além de medicamentos anti-hipertensivos para controlar a pressão arterial.",
+    "Hipertireoidismo": "Medicamentos antitireoidianos, tratamento com iodo radioativo ou cirurgia dependendo da causa e severidade.",
+    "Hipoglicemia": "Consumo imediato de uma fonte rápida de glicose. Ajustes no plano de tratamento de diabetes podem ser necessários.",
+    "Hipotireoidismo": "Terapia de reposição hormonal com levotiroxina para normalizar os níveis hormonais.",
+    "Impetigo": "Antibióticos tópicos e, em infecções mais extensas, antibióticos orais.",
+    "Icterícia": "Tratamento da condição subjacente que está causando a icterícia, como obstrução biliar ou doenças hepáticas.",
+    "Malária": "Antimaláricos específicos dependendo do tipo de parasita e da área geográfica da infecção.",
+    "Enxaqueca": "Medicamentos para alívio da dor e medicamentos preventivos para reduzir a frequência dos ataques.",
+    "Osteoartrite": "Manejo da dor com anti-inflamatórios, fisioterapia e, em casos avançados, cirurgia de substituição articular.",
+    "Paralisia (hemorragia cerebral)": "Reabilitação intensiva com fisioterapia, terapia ocupacional e, em alguns casos, cirurgia para aliviar a pressão no cérebro.",
+    "Doença de Úlcera Péptica": "Inibidores da bomba de prótons para reduzir a produção de ácido e permitir a cura das úlceras.",
+    "Pneumonia": "Antibióticos, repouso, hidratação e, em casos graves, hospitalização para tratamento intensivo.",
+    "Psoríase": "Cremes tópicos, fototerapia e medicamentos sistêmicos para controlar os sintomas e reduzir a inflamação.",
+    "Tuberculose": "Tratamento prolongado com uma combinação de antibióticos para eliminar completamente a bactéria.",
+    "Tifo": "Antibióticos e cuidados de suporte para reduzir os sintomas e prevenir complicações.",
+    "Infecção do Trato Urinário": "Antibióticos para eliminar a infecção, muita água para ajudar a limpar a bexiga.",
+    "Varizes": "Meias de compressão, mudanças de estilo de vida e, em casos mais severos, procedimentos para fechar ou remover as veias.",
+    "Hepatite A": "Tratamento de suporte, já que a condição geralmente resolve por si só. Vacinação é recomendada para prevenção."
+}
+
+prevalencia_doencas = {
+    "Vertigem Posicional Paroxística": 2.4,
+    "AIDS": 0.8,
+    "Acne": 85.0,
+    "Hepatite Alcoólica": 4.5,
+    "Alergia": 30.0,
+    "Artrite": 25.0,
+    "Asma Brônquica": 10.0,
+    "Espondilose Cervical": 15.0,
+    "Catapora": 90.0,  # Em crianças sem vacinação
+    "Colestase Crônica": 0.5,
+    "Resfriado Comum": 75.0,  # Incidência anual em porcentagem da população
+    "Dengue": 0.2,
+    "Diabetes": 8.5,
+    "Hemorroidas Dimórficas": 5.0,
+    "Reação a Medicamentos": 10.0,
+    "Infecção Fúngica": 20.0,
+    "DRGE (Doença do Refluxo Gastroesofágico)": 20.0,
+    "Gastroenterite": 30.0,
+    "Infarto": 3.0,
+    "Hepatite B": 1.5,
+    "Hepatite C": 1.0,
+    "Hepatite D": 0.4,
+    "Hepatite E": 1.2,
+    "Hipertensão": 25.0,
+    "Hipertireoidismo": 1.3,
+    "Hipoglicemia": 0.5,
+    "Hipotireoidismo": 5.0,
+    "Impetigo": 2.0,
+    "Icterícia": 2.5,
+    "Malária": 1.8,
+    "Enxaqueca": 15.0,
+    "Osteoartrite": 18.0,
+    "Paralisia (hemorragia cerebral)": 2.1,
+    "Doença de Úlcera Péptica": 10.0,
+    "Pneumonia": 5.0,
+    "Psoríase": 3.0,
+    "Tuberculose": 0.3,
+    "Tifo": 0.1,
+    "Infecção do Trato Urinário": 50.0,
+    "Varizes": 15.0,
+    "Hepatite A": 1.4
+}
+
+def plot_prevalence(disease):
+    prevalence = prevalencia_doencas.get(disease, 0)
+    fig, ax = plt.subplots()
+    ax.pie([prevalence, 100-prevalence], labels=[disease, 'Outros'], autopct='%1.1f%%', startangle=90)
+    ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+    st.pyplot(fig)
+
 # Função para prever a doença e registrar o diagnóstico
 def predict_disease(symptoms):
     input_data = np.array([symptoms])
@@ -206,11 +301,9 @@ def predict_disease(symptoms):
     prediction = model.predict(input_data)[0]
     predicted_disease = encoder.inverse_transform([prediction])[0]
     predicted_disease_translated = doencas_traduzidas.get(predicted_disease, "Doença não traduzida")
-
-    # Registrar o diagnóstico
-    #record_diagnosis(predicted_disease_translated, prediction_proba)
-
-    return predicted_disease_translated, prediction_proba
+    tratamento_recomendado = tratamentos.get(predicted_disease_translated, "Tratamento não disponível.")
+    
+    return predicted_disease_translated, prediction_proba, tratamento_recomendado
 
 # Título do app
 st.title('Diagnóstico de Doença com Base em Sintomas')
@@ -228,8 +321,12 @@ symptoms_input = [1 if symptom in selected_symptoms else 0 for symptom in sympto
 # Botão para diagnosticar
 if st.button('Diagnosticar'):
     if any(symptoms_input):  # Verifica se algum sintoma foi selecionado
-        diagnosis, probabilities = predict_disease(symptoms_input)
+        diagnosis, probabilities, tratamento = predict_disease(symptoms_input)
         st.write(f"A doença prevista é: {diagnosis}")
+        st.write(f"Tratamento recomendado: {tratamento}")
+        
+        # Chamar a função para desenhar o gráfico de prevalência
+        plot_prevalence(diagnosis)
 
         # Ordenar probabilidades e pegar os índices das maiores probabilidades
         sorted_indices = np.argsort(probabilities)[::-1]
@@ -244,5 +341,6 @@ if st.button('Diagnosticar'):
         ax.pie(probabilities_sorted, labels=diseases, autopct='%1.1f%%', startangle=90)
         ax.axis('equal')  # Garante que a torta seja desenhada como um círculo.
         st.pyplot(fig)
+        
     else:
         st.error("Por favor, selecione pelo menos um sintoma.")

@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # Função para carregar o modelo treinado
 @st.cache_data
 def load_model():
-    with open('C:\\Users\\Yuki\\Desktop\\github\\Aula_DS\\brasileirao_predicition\\modelo_treinado.pkl', 'rb') as file:
+    with open('C:\\GitHub_python\\Aula_DS\\brasileirao_predicition\\modelo_treinado.pkl', 'rb') as file:
         model = pickle.load(file)
     return model
 
@@ -17,7 +17,7 @@ model = load_model()
 # Função para carregar os dados
 @st.cache_data
 def load_data():
-    data = pd.read_csv('C:\\Users\\Yuki\\Desktop\\github\\Aula_DS\\brasileirao_predicition\\data.csv')
+    data = pd.read_csv('C:\\GitHub_python\\Aula_DS\\brasileirao_predicition\\data.csv')
     return data
 
 data = load_data()
@@ -40,14 +40,30 @@ def simulate_round(round_number, data):
     round_games['predicted_result'] = predictions
     return round_games
 
-# Função para simular um confronto direto
+# Lista de colunas necessárias para fazer as previsões
+required_columns = [
+    'gols_marcados_mandante', 'gols_sofridos_mandante',
+    'gols_marcados_visitante', 'gols_sofridos_visitante',
+    'diferenca_gols_mandante', 'diferenca_gols_visitante'
+]
+
 def simulate_match(team1, team2, data):
     match_data = data[(data['time_mandante'] == team1) & (data['time_visitante'] == team2)]
-    if not match_data.empty:
-        input_features = np.array([match_data.iloc[0][features]]).astype(np.float32)
-        result = model.predict(input_features)
-        return result[0]
-    return "No match data available"
+    if match_data.empty:
+        return "Nenhum dado encontrado para este confronto."
+    elif not all(col in match_data.columns for col in required_columns):
+        return "Colunas necessárias faltando para fazer a previsão."
+    else:
+        input_features = match_data[required_columns].values[0].reshape(1, -1)
+        prediction = model.predict(input_features)
+        return f"Resultado previsto: {prediction[0]}"
+
+
+# Exemplo de uso
+team1 = 'NomeTime1'
+team2 = 'NomeTime2'
+result = simulate_match(team1, team2, data)
+print(result)
 
 # Função para mostrar análises de um time
 def show_team_analysis(team, data):
