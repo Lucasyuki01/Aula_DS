@@ -5,14 +5,27 @@ import pickle
 import matplotlib.pyplot as plt
 
 # Função para carregar o modelo treinado
-@st.cache(allow_output_mutation=True)
+@st.cache_data
 def load_model():
-    with open('modelo_treinado.pkl', 'rb') as file:
+    with open('C:\\Users\\Yuki\\Desktop\\github\\Aula_DS\\brasileirao_predicition\\modelo_treinado.pkl', 'rb') as file:
         model = pickle.load(file)
     return model
 
 # Carregar o modelo
 model = load_model()
+
+# Função para carregar os dados
+@st.cache_data
+def load_data():
+    data = pd.read_csv('C:\\Users\\Yuki\\Desktop\\github\\Aula_DS\\brasileirao_predicition\\data.csv')
+    return data
+
+data = load_data()
+
+# Definindo as features usadas para o modelo
+features = ['ano_campeonato', 'rodada', 'time_mandante', 'time_visitante', 'publico',
+            'gols_marcados_mandante', 'gols_sofridos_mandante', 'gols_marcados_visitante',
+            'gols_sofridos_visitante', 'diferenca_gols_mandante', 'diferenca_gols_visitante']
 
 # Função para simular resultados de uma rodada
 def simulate_round(round_number, data):
@@ -59,9 +72,12 @@ with tab1:
     st.header("Simulação de Rodadas do Campeonato")
     rodada = st.number_input('Escolha a Rodada', min_value=1, max_value=38, value=1, step=1)
     if st.button('Simular Rodada'):
-        results = simulate_round(rodada, data)
-        st.write(results)
-
+        # Verificar se todas as colunas necessárias estão presentes antes de simular a rodada
+        if {'gols_marcados_mandante', 'gols_sofridos_mandante', 'gols_marcados_visitante', 'gols_sofridos_visitante', 'diferenca_gols_mandante', 'diferenca_gols_visitante'}.issubset(data.columns):
+            results = simulate_round(rodada, data)
+            st.write(results)
+        else:
+            st.error("Algumas colunas necessárias estão faltando no DataFrame.")
 with tab2:
     st.header("Simulação de Confronto Direto")
     team1 = st.selectbox('Selecione o Time da Casa', options=data['time_mandante'].unique())
