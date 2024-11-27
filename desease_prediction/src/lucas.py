@@ -290,7 +290,7 @@ prevalencia_doencas = {
 def plot_prevalence(disease):
     prevalence = prevalencia_doencas.get(disease, 0)
     fig, ax = plt.subplots()
-    ax.pie([prevalence, 100-prevalence], labels=[disease, 'Outros'], autopct='%1.1f%%', startangle=90)
+    ax.pie([prevalence, 100-prevalence], labels=[f"população com {disease}", 'População sem'], autopct='%1.1f%%', startangle=90)
     ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
     st.pyplot(fig)
 
