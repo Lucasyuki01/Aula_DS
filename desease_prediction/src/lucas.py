@@ -5,12 +5,20 @@ import matplotlib.pyplot as plt
 import joblib
 import os
 
+# Determinar o diretório base a partir do diretório atual do script
+base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Caminhos para os modelos e dados
+model_path = os.path.join(base_path, 'models', 'best_random_forest_model.pkl')
+encoder_path = os.path.join(base_path, 'models', 'label_encoder.pkl')
+symptoms_path = os.path.join(base_path, 'data', 'Testing.csv')
+
 # Carregar o modelo e o encoder
-model = joblib.load("\\Users\\Yuki\\Desktop\\github\\DS_Unesp\\Work_Git\\lucas_yuki\\WorkGit\\Aula12\\best_random_forest_model.pkl")
-encoder = joblib.load("\\Users\\Yuki\\Desktop\\github\\DS_Unesp\\Work_Git\\lucas_yuki\\WorkGit\\Aula12\\label_encoder.pkl")
+model = joblib.load(model_path)
+encoder = joblib.load(encoder_path)
 
 # Carregar a lista de sintomas
-symptoms_list = list(pd.read_csv("\\Users\\Yuki\\Desktop\\github\\DS_Unesp\\Work_Git\\lucas_yuki\\WorkGit\\Aula12\\Testing.csv").columns[:-1])
+symptoms_list = list(pd.read_csv(symptoms_path).columns[:-1])
 
 # Traduções de sintomas
 sintomas_traduzidos = {
